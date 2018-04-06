@@ -19,8 +19,10 @@ python count_json.py [-h] filespec
 ```
 
 ## Arguments
+```
 -h requests help
 filespec must be the path to one or more json files
+```
 
 ## Notes
 * count_json.py reports the total number of files it scanned, and the count of records in each
@@ -37,10 +39,11 @@ python dedupe_json.py [-h] [-o] -k "KEY1|KEY2|...|KEYn" filespec
 ```
 
 ## Arguments
+```
 -h requests help
 -o will cause dedupe_json.py to write a .deduped version of each file 
 filespec must be the path to one or more json files
-
+```
 ## Notes
 * dedupe_json.py considers a record to be a duplicate when the aggregate of all key values are not unique within the file
 * dedupe_json.py retains on the the first record to have this unique key; all subsequent duplicates are dropped
@@ -56,9 +59,11 @@ python fetch_json.py [-h] [-o outputfile] uri
 ```
 
 ## Arguments
+```
 -h requests help
 -o outputfile specifies the name which the response from uri will be written
 uri is the uri to a restful web service
+```
 
 ## Notes
 * fetch_json.py will report the standard HTTP error codes, if it encounters one
@@ -75,9 +80,11 @@ python merge_json.py [-h] [-o] filespec
 ```
 
 ## Arguments
+```
 -h requests help
 -o outputfile specifies the name which the merged json data wil be written
 filespec must be the path to one or more json files
+```
 
 ## Notes
 * merge_json.py currently operates in memory (sorry) so a core dump will occur if you try to merge more files than there is RAM
@@ -93,8 +100,10 @@ python pretty_json.py [-h] filespec
 ```
 
 ## Arguments
+```
 -h requests help
 filespec must be the path to one or more json files
+```
 
 ## Notes
 * pretty_json.py uses the standard python format to pretty print files
@@ -110,8 +119,10 @@ python profile_json.py [-h] filespec
 ```
 
 ## Arguments
+```
 -h requests help
 filespec must be the path to one or more json files
+```
 
 ## Notes
 * Still a work in progress
@@ -126,9 +137,11 @@ python scan_json.py [-h] -k "KEY1=VALUE1|KEY2=VALUE2|...|KEYn=VALUEn" filespec
 ```
 
 ## Arguments
+```
 -h requests help
 -k specifies one or more keys, and optionally values, to scan for
 filespec must be the path to one or more json files
+```
 
 ## Notes
 * scan_json.py scans each file in filespec, and reports record numbers that match all specified keys/values
@@ -142,11 +155,13 @@ python sort_json.py [-h] [-o] -k KEY filespec
 ```
 
 ## Arguments
+```
 -h requests help
 -o will cause jsort.py to write a .sorted version of each file 
 -k KEY specifies the sort key
 -d makes the sort descending (default is ascending)
 filespec must be the path to one or more json files
+```
 
 ## Notes
 * sort_json.py sorts json files using the specified key
@@ -161,10 +176,12 @@ python jsplit.py [-h] [-o] -k KEY filespec
 ```
 
 ## Arguments
+```
 -h requests help
 -k KEY specifies the key to split records on 
 -o will cause jsplit.py to copy records with the specified KEY = VALUE into .split.VALUE files
 filespec must be the path to one or more json files
+```
 
 ## Notes
 * split_json.py writes records with KEY blank into a .None file
