@@ -30,7 +30,9 @@ filespec must be the path to one or more json files
 Remove duplicates from json files using one or more key/value pairs, optionally write .deduped files
 
 ## Usage
+```
 python dedupe_json.py [-h] [-o] -k "KEY1|KEY2|...|KEYn" filespec
+```
 
 ## Arguments
 -h requests help
@@ -47,7 +49,9 @@ filespec must be the path to one or more json files
 Request a restful URL and store the returned json in a file
 
 ## Usage
+```
 python fetch_json.py [-h] [-o outputfile] uri
+```
 
 ## Arguments
 -h requests help
@@ -64,7 +68,9 @@ uri is the uri to a restful web service
 Merges two or more json files into a .merged file
 
 ## Usage
+```
 python merge_json.py [-h] [-o] filespec
+```
 
 ## Arguments
 -h requests help
@@ -80,7 +86,9 @@ filespec must be the path to one or more json files
 Pretty prints json files
 
 ## Usage
+```
 python pretty_json.py [-h] filespec
+```
 
 ## Arguments
 -h requests help
@@ -95,7 +103,9 @@ filespec must be the path to one or more json files
 Prints each level of keys in the first record of json files
 
 ## Usage 
+```
 python profile_json.py [-h] filespec
+```
 
 ## Arguments
 -h requests help
@@ -109,7 +119,9 @@ filespec must be the path to one or more json files
 # scan_json.py
 
 ## Usage
+```
 python scan_json.py [-h] -k "KEY1=VALUE1|KEY2=VALUE2|...|KEYn=VALUEn" filespec
+```
 
 ## Arguments
 -h requests help
@@ -123,7 +135,9 @@ filespec must be the path to one or more json files
 ---
 
 # sort_json.py
+```
 python sort_json.py [-h] [-o] -k KEY filespec
+```
 
 ## Arguments
 -h requests help
@@ -140,7 +154,9 @@ filespec must be the path to one or more json files
 # spit_json.py
 
 ## Usage
+```
 python jsplit.py [-h] [-o] -k KEY filespec
+```
 
 ## Arguments
 -h requests help
