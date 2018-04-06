@@ -14,7 +14,9 @@ See descriptions below!
 Counts the number of records in json files
 
 ## Usage
+```
 python count_json.py [-h] filespec
+```
 
 ## Arguments
 -h requests help
